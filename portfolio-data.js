@@ -24,7 +24,7 @@ const portfolio = {
       stack: ['HTML', 'CSS', 'JavaScript', 'Python', 'SQLite'],
       image: './assets/kurasa-bookstore.png',
       imageAlt: 'KURASA Bookstore homepage showing featured books',
-      demo: ''
+      demo: './assets/kurasa-walkthrough.mp4'
     },
     {
       title: 'BUILDWISE',
