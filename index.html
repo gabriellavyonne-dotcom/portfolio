@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Gabriella Vyonne’s software developer portfolio, projects and professional background.">
+  <meta name="theme-color" content="#10120e">
+  <title>Gabriella Vyonne — Software Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="portfolio-data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <div class="shell nav">
+      <a href="#main" class="brand gv-spray" aria-label="Gabriella Vyonne — back to top">
+  <b aria-hidden="true">GV</b>
+</a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Projects</a>
+        <a href="#about">About</a>
+        <a href="#credentials" id="credentials-nav" hidden>Credentials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a data-profile="resume" class="button small" hidden>Résumé ↗</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="shell hero studio" aria-labelledby="intro-title">
+      <div class="intro">
+        <p class="label"><span class="dot"></span> Software Developer · Web Application</p>
+        <h1 id="intro-title">Gabriella <em>Vyonne.</em></h1>
+        <p class="lede">I’m passionate about learning and technology. I use what I learn to build practical web experiences and keep exploring how software can make everyday tasks easier.</p>
+        <div class="actions">
+          <a class="button primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+          <a class="button" data-profile="github" hidden>GitHub ↗</a>
+          <a class="button" data-profile="resume" hidden>View résumé ↗</a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <div class="portrait-frame">
+          <img id="headshot" alt="Portrait of Gabriella Vyonne" hidden>
+          <div id="monogram" class="monogram" aria-hidden="true">GV<span>.</span></div>
+        </div>
+        <figcaption id="portrait-caption" hidden>Add your photo in <code>portfolio-data.js</code></figcaption>
+      </figure>
+    </section>
+
+    <div class="shell quick-links">
+      <a href="#work"><span class="quick-icon" aria-hidden="true">▦</span><span><strong>Project gallery</strong><small>Preview working applications</small></span><span aria-hidden="true">↗</span></a>
+      <a href="#about"><span class="quick-icon" aria-hidden="true">◎</span><span><strong>Meet Gabriella</strong><small>About me, skills and learning</small></span><span aria-hidden="true">↗</span></a>
+    </div>
+
+    <section class="work section" id="work" aria-labelledby="work-title">
+      <div class="shell">
+        <div class="section-heading">
+          <div><p class="label">Portfolio</p><h2 id="work-title">Project gallery</h2></div>
+          <div class="controls" id="controls" role="group" aria-label="Featured project navigation" hidden>
+            <button type="button" id="previous" aria-label="Previous featured project">←</button>
+            <span id="position" role="status"></span>
+            <button type="button" id="next" aria-label="Next featured project">→</button>
+          </div>
+        </div>
+        <div id="featured" class="feature" role="region" aria-label="Featured project" tabindex="0"></div>
+        <div id="archive" class="archive"></div>
+        <noscript><p>Enable JavaScript to browse the projects.</p></noscript>
+      </div>
+    </section>
+
+    <section class="shell section about" id="about" aria-labelledby="about-title">
+      <div><p class="label">Profile</p><h2 id="about-title">About me</h2></div>
+      <div>
+        <p id="bio" class="lede"></p>
+        <div id="skills-panel" class="skills" hidden><h3>Skills & tools</h3><ul class="tags" id="skills"></ul></div>
+        <div id="learning-panel" class="skills" hidden><h3>Currently learning</h3><p id="learning"></p></div>
+      </div>
+    </section>
+
+    <section class="section work" id="credentials" aria-labelledby="credentials-title" hidden>
+      <div class="shell">
+        <p class="label">Professional development</p>
+        <h2 id="credentials-title">Credentials & achievements</h2>
+        <div class="credentials">
+          <div class="credential-panel" id="certificates-panel" hidden><h3>Certificates</h3><div id="certificates"></div></div>
+          <div class="credential-panel" id="achievements-panel" hidden><h3>Achievements</h3><div id="achievements"></div></div>
+          <div class="credential-panel" id="experience-panel" hidden><h3>Experience & education</h3><div id="experience"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell section contact" id="contact" aria-labelledby="contact-title">
+      <div><p class="label">Contact</p><h2 id="contact-title">Let’s talk.</h2></div>
+      <div>
+        <div class="actions">
+          <a class="button primary" data-profile="email" hidden>Email me ↗</a>
+          <a class="button" data-profile="linkedin" hidden>LinkedIn ↗</a>
+          <a class="button" data-profile="github" hidden>GitHub ↗</a>
+          <button class="button" type="button" id="share">Copy portfolio link</button>
+        </div>
+        <p id="preview-contact" class="helper" hidden>Add your GitHub, email and résumé details in <code>portfolio-data.js</code>.</p>
+        <p id="share-status" class="helper" role="status"></p>
+      </div>
+    </section>
+  </main>
+  <footer class="shell footer"><span>Gabriella Vyonne</span><a href="#main">Back to top ↑</a></footer>
+</body>
+</html>
